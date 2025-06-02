@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">قائمة الطعام</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- استخدام خطوط مشابهة أو أنيقة -->
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;600;700&family=Tajawal:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="app-container">
+        <!-- شاشة البداية / الترحيب -->
+        <section id="hero-section" class="hero">
+		 <div id="hero-slider-container">
+                <!-- سيتم تعبئة الصور هنا بواسطة JavaScript -->
+            </div>
+            <div class="hero-content">
+                <img id="hotel-logo-hero" src="" alt="Logo" class="hotel-logo-main">
+                <h1 id="hero-main-title-ar" class="hero-title arabic-text"></h1>
+                <p id="hero-subtitle-ar" class="hero-subtitle arabic-text"></p>
+                <button id="view-menu-btn" class="cta-button">
+                    <span id="hero-button-text-ar" class="arabic-text"></span>
+                    <!-- <span class="english-text">View Menu</span> -->
+                </button>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <!-- حاوية القائمة الرئيسية (مخفية في البداية) -->
+        <main id="menu-view" class="menu-view-hidden">
+            <!-- ... (بقية محتوى menu-view يبقى كما هو) ... -->
+            <header id="menu-header">
+                <img id="hotel-logo-header" src="" alt="Hotel Logo" class="hotel-logo-header">
+                <div>
+                    <h1 id="hotel-name-ar-header" class="arabic-text"></h1>
+                    <h2 id="hotel-name-en-header" class="english-text"></h2>
+                </div>
+                <button id="back-to-hero-btn" class="back-button" title="العودة للرئيسية">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z"></path></svg>
+                </button>
+            </header>
+
+            <nav id="category-nav">
+                <!-- أزرار الأقسام -->
+            </nav>
+
+            <section id="items-display-area">
+                <div id="category-info-header">
+                    <img id="current-category-main-image" src="" alt="Category Image" class="category-main-image">
+                    <div id="category-title-indicator">
+                        <h2 id="current-category-name-ar" class="arabic-text"></h2>
+                        <h3 id="current-category-name-en" class="english-text"></h3>
+                    </div>
+                </div>
+                <div id="menu-items-container">
+                    <!-- أصناف القسم -->
+                </div>
+            </section>
+
+            <footer id="menu-footer">
+                <p id="room-service-ar" class="arabic-text"></p>
+                <p id="room-service-en" class="english-text"></p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="menu-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
