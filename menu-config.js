@@ -223,6 +223,22 @@ const menuConfigData = {
         }
       ]
     },
+	 {
+      id: "breakfast",
+      name_en: "Breakfast Favorites",
+      name_ar: "الإفطار",
+      mainImage: "images/breakfast_collage.jpg",
+      items: [
+        {
+          name_en: "Oriental Breakfast",
+          name_ar: "إفطار شرقي",
+          price: 8000,
+          description_ar: "تشكيلة من الجبن، زيتون، الفول المدمس أو الفاصوليا، الطماطم والخيار واختيارك من البيض حسب رغبتك (مسلوق أو مقلي) ويقدم الحليب أو شاي.",
+          description_en: "A variety of cheese, olives, Bean mudammas or beans, tomatoes and cucumber, and your choice of eggs (boiled or fried). Served with milk or tea."
+        }
+      ]
+    },
+	
     // 6. المطبخ اليمني (إفطار وعشاء) - Yemeni Cuisine (Breakfast & Dinner)
     {
       id: "yemeni_cuisine", // ID remains the same, but name changes
@@ -230,7 +246,7 @@ const menuConfigData = {
       name_ar: "المطبخ اليمني (إفطار)",
       mainImage: "images/yemeni_cuisine_collage.jpg",
       items: [
-        { name_en: "Fresh Lamb Liver (Large Portion)", name_ar: "كبدة غنم بلدي (نفر كبير)", price: 7500, description_ar: "كبدة غنم طازجة مطهيه مع البصل والطماطم والفلفل الأخضر والتوابل اليمنية تقدم مع الخبز.", description_en: "Fresh lamb liver cooked with onions, tomato, green chili, and Yemeni spices. Served with bread." },
+        { name_en: "Fresh Lamb Liver (Large Portion)", name_ar: "كبدة غنم بلدي (نفر)", price: 7500, description_ar: "كبدة غنم طازجة مطهيه مع البصل والطماطم والفلفل الأخضر والتوابل اليمنية تقدم مع الخبز.", description_en: "Fresh lamb liver cooked with onions, tomato, green chili, and Yemeni spices. Served with bread." },
         { name_en: "Small Meat (Meat Saghar)", name_ar: "لحم صغار", price: 7000, description_ar: "قطع لحم صغيرة مطهوة على الطريقة اليمنية.", description_en: "Small pieces of lamb cooked Yemeni style." },
         { name_en: "Chicken Akda", name_ar: "عقدة دجاج", price: 6000,
           description_ar: "متبلة بنكهة خاصة من التوابل العدنية مطهية مع الخضار تقدم مع الأرز.", description_en: "Chicken cubes marinated with special Adeni spices, cooked with vegetables. Served with rice." },
@@ -272,7 +288,7 @@ const menuConfigData = {
         { name_en: "Kabsa (Hot)", name_ar: "كبسة حار", price: 6000, description_ar: "كبسة حارة (اسأل عن التفاصيل).", description_en: "Hot Kabsa (ask for details)." },
         {name_en: "Normal Tomato Sauce",name_ar: "سحاوق عادي",price: 1000,description_ar: "صلصة السحاوق اليمنية التقليدية الحارة.",description_en: "Traditional Yemeni hot sahawq sauce."},
         {name_en: "Tomato Sauce with Cheese",name_ar: "سحاوق جبن",price: 3000,description_ar: "صلصة السحاوق اليمنية مع إضافة الجبن.",description_en: "Traditional Yemeni sahawq sauce with added cheese."},
-		{ name_en: "Fresh Lamb Liver (Large Portion)", name_ar: "كبدة غنم بلدي (نفر كبير)", price: 7500, description_ar: "كبدة غنم طازجة مطهيه مع البصل والطماطم والفلفل الأخضر والتوابل اليمنية تقدم مع الخبز.", description_en: "Fresh lamb liver cooked with onions, tomato, green chili, and Yemeni spices. Served with bread." },
+        { name_en: "Fresh Lamb Liver (Large Portion)", name_ar: "كبدة غنم بلدي (نفر)", price: 7500, description_ar: "كبدة غنم طازجة مطهيه مع البصل والطماطم والفلفل الأخضر والتوابل اليمنية تقدم مع الخبز.", description_en: "Fresh lamb liver cooked with onions, tomato, green chili, and Yemeni spices. Served with bread." },
         { name_en: "Small Meat (Meat Saghar)", name_ar: "لحم صغار", price: 7000, description_ar: "قطع لحم صغيرة مطهوة على الطريقة اليمنية.", description_en: "Small pieces of lamb cooked Yemeni style." },
         { name_en: "Chicken Akda", name_ar: "عقدة دجاج", price: 6000,
           description_ar: "متبلة بنكهة خاصة من التوابل العدنية مطهية مع الخضار تقدم مع الأرز.", description_en: "Chicken cubes marinated with special Adeni spices, cooked with vegetables. Served with rice." },
@@ -369,21 +385,7 @@ const menuConfigData = {
     },
     
     // أقسام إضافية لم تكن في الترتيب المرقم (Breakfast, Sandwiches, Special Fish Dishes)
-    {
-      id: "breakfast",
-      name_en: "Breakfast Favorites",
-      name_ar: "الإفطار",
-      mainImage: "images/breakfast_collage.jpg",
-      items: [
-        {
-          name_en: "Oriental Breakfast",
-          name_ar: "إفطار شرقي",
-          price: 8000,
-          description_ar: "تشكيلة من الجبن، زيتون، الفول المدمس أو الفاصوليا، الطماطم والخيار واختيارك من البيض حسب رغبتك (مسلوق أو مقلي) ويقدم الحليب أو شاي.",
-          description_en: "A variety of cheese, olives, Bean mudammas or beans, tomatoes and cucumber, and your choice of eggs (boiled or fried). Served with milk or tea."
-        }
-      ]
-    },
+   
      
     // أطباق أسماك خاصة (غير موجودة في الترتيب المرقم)
     /* {
